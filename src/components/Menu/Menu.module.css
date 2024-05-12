@@ -28,6 +28,8 @@
 }
 
 .link {
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
     text-decoration: none;
     display: flex;
     padding: 10px 0 11px 20px;
@@ -35,9 +37,8 @@
 }
 
 .link:hover,
-.link.active {
+.link:active {
     border-bottom: 1px solid #BD9DEA;
-    padding-bottom: 10px;
     color: #BD9DEA;
 }
 

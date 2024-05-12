@@ -26,6 +26,10 @@ const Menu: React.FC = () => {
     dispatch(getCategories());
   }, [dispatch]);
 
+  function toCapitalize(str: string) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
   return (
     <div
       className={cn(styles.menu, {
@@ -44,7 +48,7 @@ const Menu: React.FC = () => {
                 onClick={() => dispatch(toggleMenu(false))}
               >
                 <img src={images[items.indexOf(item)]} alt={item.name} />
-                <span>{item.name}</span>
+                <span>{toCapitalize(item.name)}</span>
               </NavLink>
             </li>
           ))}

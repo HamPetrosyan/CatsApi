@@ -2,11 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
 }
 
 .flex-item {
     flex: 0 0 calc(33.33% - 20px);
     margin-bottom: 20px;
+    background-size: contain;
 }
 
 .flex-item img {
